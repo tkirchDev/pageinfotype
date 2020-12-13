@@ -1,0 +1,32 @@
+{
+  "name": "pageinfotype",
+  "version": "1.0.0",
+  "description": "A page infotype for apolloserver with get function.",
+  "main": "lib/index.js",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build": "npm run build:types && npm run build:js",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "start": "node lib/index.js",
+    "start:watch": "nodemon lib/index.js"
+  },
+  "keywords": [],
+  "author": "Titus Kirch",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server": "^2.19.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.7",
+    "babel-preset-latest-node": "^5.2.0",
+    "nodemon": "^2.0.6",
+    "typescript": "^4.1.3"
+  }
+}
