@@ -5,7 +5,7 @@
  *
  * @return [type]
  */
-declare function get(first: number, skip: number, totalCount: number): {
+declare function get(first: number | undefined, skip: number | undefined, totalCount: number): {
     nodesPerPage: number;
     hasNextPage: boolean;
     hasPreviousPage: boolean;

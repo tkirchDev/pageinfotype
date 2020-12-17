@@ -5,13 +5,13 @@
  * 
  * @return [type]
  */
-function get(first: number, skip: number, totalCount: number) {
-  let lastPage = Math.ceil(totalCount / first);
+function get(first: number = 20, skip: number = 0, totalCount: number) {
+  let lastPage = Math.ceil(totalCount / first) - 1;
   return {
     nodesPerPage: first,
     hasNextPage: skip < lastPage,
-    hasPreviousPage: skip > 1,
-    currentPage: skip ? skip + 1 : 1,
+    hasPreviousPage: skip > 0,
+    currentPage: skip,
     lastPage,
   };
 }
