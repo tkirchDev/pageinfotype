@@ -1,6 +1,6 @@
 {
   "name": "@tituskirch/pageinfotype",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A page infotype for apolloserver with get function.",
   "main": "lib/index.js",
   "scripts": {

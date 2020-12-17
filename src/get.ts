@@ -9,7 +9,7 @@ function get(first: number, skip: number, totalCount: number) {
   let lastPage = Math.ceil(totalCount / first);
   return {
     nodesPerPage: first,
-    hasNextPage: first < lastPage,
+    hasNextPage: skip < lastPage,
     hasPreviousPage: skip > 1,
     currentPage: skip ? skip + 1 : 1,
     lastPage,
