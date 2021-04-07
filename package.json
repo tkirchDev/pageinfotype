@@ -1,7 +1,7 @@
 {
   "name": "@tituskirch/pageinfotype",
-  "version": "2.0.1",
-  "description": "A page infotype for apolloserver with get function.",
+  "version": "2.0.2",
+  "description": "A PageInfoType according to relay for apollo server.",
   "main": "lib/index.js",
   "scripts": {
     "build": "npm run build:production",
@@ -12,7 +12,12 @@
     "start:watch": "nodemon -r dotenv/config dist/server",
     "eslint": "npx eslint 'src/**.ts'"
   },
-  "keywords": [],
+  "keywords": [
+    "apolloserver",
+    "page-infotype",
+    "relay",
+    "graphql"
+  ],
   "author": "Titus Kirch",
   "license": "MIT",
   "dependencies": {

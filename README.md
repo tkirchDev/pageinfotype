@@ -14,7 +14,31 @@
   </a>
 </p>
 
-> A page infotype for apolloserver with get function.
+> A PageInfoType according to relay for apollo server.
+
+## Hot to use
+First install the package
+
+```BASH
+npm i @tituskirch/pageinfotype
+```
+
+Then import the type definition.
+```TS
+import pageinfotype from '@tituskirch/pageinfotype'
+```
+
+Now you can merge `pageinfotype.typeDef` with your other TypeDefs and pass it to the ApolloServer. In your TypeDefs you can now access the type `PageInfo` without any problems. Remember to write a resolver for PageInfo.
+
+## TypeDef
+```graphql
+type PageInfo {
+  hasNextPage: Boolean
+  hasPreviousPage: Boolean
+  startCursor: String!
+  endCursor: String!
+}
+```
 
 ## Commands
 
