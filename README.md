@@ -16,17 +16,15 @@
 
 > A page infotype for apolloserver with get function.
 
-## Build
+## Commands
 
-```sh
-npm build
-```
-
-## Type check
-
-```sh
-npm type-check:watch
-```
+|Command|Aliases|Description|
+|---|---|---|
+|`npm run build:production`|`npm run build`| Builds the app with the production settings. |
+|`npm run build:dev`|`npm run build:development`| Builds the app with the development settings. |
+|`npm run start`| - | Starts the app with the `.env` file. |
+|`npm run start:watch`| - | Starts the app with the `.env` file and nodemon. |
+|`npm run eslint`| - | Run ESLint to check the code style. |
 
 ## Author
 

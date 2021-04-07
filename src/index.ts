@@ -1,4 +1,3 @@
-import { typeDef } from "./typeDef";
-import { get } from "./get";
+import { typeDef } from './typeDef'
 
-export default { typeDef, get };
+export default { typeDef }

@@ -1,13 +1,12 @@
-import { gql } from "apollo-server";
+import { gql } from 'apollo-server'
 
 const typeDef = gql`
   type PageInfo {
-    nodesPerPage: Int!
-    hasNextPage: Boolean!
-    hasPreviousPage: Boolean!
-    currentPage: Int!
-    lastPage: Int!
+    hasNextPage: Boolean
+    hasPreviousPage: Boolean
+    startCursor: String!
+    endCursor: String!
   }
-`;
+`
 
-export { typeDef };
+export { typeDef }
